@@ -28,7 +28,11 @@ a {
   color: #1d1f22;
 }
 .navbar_custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1rem;
   padding: 0;
@@ -41,10 +45,13 @@ figure {
   width: 150px;
 }
 figure img {
+  -webkit-box-shadow: 0 5px 10px #1d1f2248;
   box-shadow: 0 5px 10px #1d1f2248;
   border: solid 1px #dfdfdf;
 }
 .social_custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0.8rem;
   margin-top: 0.5rem;
@@ -71,6 +78,8 @@ figure img {
 .progress {
   height: 14px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .progress::-webkit-progress-bar {
@@ -97,13 +106,26 @@ ul {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .contact-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: fixed;
   right: 1rem;
@@ -111,6 +133,7 @@ footer {
   background-color: #dceef0;
   padding: 1.5rem;
   border-radius: 1.5rem;
+  -webkit-box-shadow: 0 8px 8px #1d1f221c;
   box-shadow: 0 8px 8px #1d1f221c;
   border: solid 1px #ffffff;
 }
