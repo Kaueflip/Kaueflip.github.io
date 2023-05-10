@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #1d1f22;
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  font-size: 16px;
+}
+header {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #dceef0;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+a {
+  color: #1d1f22;
+}
+.navbar_custom {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+.navbar_custom p {
+  font-size: 18px;
+  font-weight: 500;
+}
+figure {
+  width: 150px;
+}
+figure img {
+  box-shadow: 0 5px 10px #1d1f2248;
+  border: solid 1px #dfdfdf;
+}
+.social_custom {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+.social_custom a {
+  color: #1d1f22;
+  opacity: 0.7;
+}
+.social_custom a:hover {
+  opacity: 1;
+}
+.left {
+  border-right: solid 6px #dceef0;
+  padding-right: 3rem;
+}
+.right {
+  padding-left: 3rem;
+}
+.left,
+.right {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.progress {
+  height: 14px;
+  width: 100%;
+  display: flex;
+}
+.progress::-webkit-progress-bar {
+  background-color: #dceef0;
+  width: 100%;
+}
+.progress::-webkit-progress-value {
+  background-color: #5c7375 !important;
+}
+
+.hr {
+  width: 100%;
+  border-top: solid 6px #dceef0;
+  opacity: 1;
+}
+.info {
+  margin-bottom: 3rem;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #dceef0;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 8px #1d1f221c;
+  border: solid 1px #ffffff;
+}
+.contact-footer h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+.contact-footer p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+  .navbar_custom p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .left {
+    border-right: 0;
+  }
+  .left {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .right {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-top: 0;
+  }
+}
