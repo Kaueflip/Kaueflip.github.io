@@ -170,4 +170,9 @@ footer {
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     padding-top: 0;
   }
+  .contact-footer {
+    right: calc(var(--bs-gutter-x) * 0.5);
+    left: calc(var(--bs-gutter-x) * 0.5);
+    bottom: calc(var(--bs-gutter-x) * 0.5);
+  }
 }
