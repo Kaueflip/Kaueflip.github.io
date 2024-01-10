@@ -1,22 +1,28 @@
+:root {
+  --bg: #f1f1f1;
+  --borders: #f7f7f7;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
   color: #1d1f22;
   font-family: "Poppins", sans-serif;
-  background-color: #fafafa;
+  background-color: var(--bg);
   font-size: 16px;
 }
 header {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #dceef0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--borders);
 }
 h1 {
   font-weight: 700;
+  font-size: 24px;
 }
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 h3 {
@@ -38,19 +44,14 @@ a {
   padding: 0;
 }
 .navbar_custom p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d1f22;
 }
 figure {
-  width: 150px;
+  width: 90px;
 }
-figure img {
-  -webkit-box-shadow: 0 5px 10px #1d1f2248;
-  box-shadow: 0 5px 10px #1d1f2248;
-  border: solid 1px #dfdfdf;
-  -webkit-box-reflect: below 0px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0, 0.4));
-}
+
 .social_custom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +67,7 @@ figure img {
   opacity: 1;
 }
 .left {
-  border-right: solid 6px #dceef0;
+  border-right: solid 3px var(--borders);
   padding-right: 3rem;
 }
 .right {
@@ -78,14 +79,14 @@ figure img {
   padding-bottom: 3rem;
 }
 .progress {
-  height: 14px;
+  height: 6px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .progress::-webkit-progress-bar {
-  background-color: #dceef0;
+  background-color: var(--borders);
   width: 100%;
 }
 .progress::-webkit-progress-value {
@@ -94,7 +95,7 @@ figure img {
 
 .hr {
   width: 100%;
-  border-top: solid 6px #dceef0;
+  border-top: solid 3px var(--borders);
   opacity: 1;
 }
 .info {
@@ -132,12 +133,11 @@ footer {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  background-color: #dceef0;
+  background-color: #fff;
   padding: 1.5rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   -webkit-box-shadow: 0 8px 8px #1d1f221c;
   box-shadow: 0 8px 8px #1d1f221c;
-  border: solid 1px #ffffff;
 }
 .contact-footer h3 {
   margin-top: 0;
@@ -152,11 +152,15 @@ footer {
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
   }
+  .navbar_custom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .navbar_custom p {
     font-size: 16px;
   }
   h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .left {
     border-right: 0;
