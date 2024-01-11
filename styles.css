@@ -90,7 +90,7 @@ figure {
   width: 100%;
 }
 .progress::-webkit-progress-value {
-  background-color: #5c7375 !important;
+  background: linear-gradient(to right, #13513e, #20ca80) !important;
 }
 
 .hr {
